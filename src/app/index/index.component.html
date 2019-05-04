@@ -1,0 +1,61 @@
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../assets/img/carousel/slider4.jpg" alt="Los Angeles" width="1370" height="630">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/img/carousel/slider5.jpg" alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/img/carousel/slider6.jpg" alt="New York" width="1100" height="500">
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="row section-head">
+          <h2 class="col-lg-11">Plays</h2>
+          <h6 class="col-lg-1 section-link"><button class="btn btn-outline-info" (click)="onviewall()" >View All</button></h6>
+        </div>
+      </div>
+    </div>
+    <div class="row card-list">
+        <div class="card col-lg-3 card-boundary"  *ngFor="let post of posts | async | slice:0:4;">
+          <div class="card-specific">
+              <img class="card-img-top" src="../../assets/img/cards/{{post.title}}.jpg" alt="Card image">
+              <div class="team-content row card-details">
+                  <div class="col-lg-9 card-desc">
+                    <h5><a  (click)="onplay(post.title)"  routerLink="" class="card-head">{{ post.title}}</a></h5>
+                    <div class="row capsule">
+                        <p>{{post.language}} </p>
+                        <p>{{post.genre}} </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 card-date">
+                      <a> {{post.rating}}</a>
+                  </div>
+                </div>
+          </div>
+        </div>
+        
+    </div>
+  </div>

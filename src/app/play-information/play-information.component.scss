@@ -1,0 +1,122 @@
+.bg {
+    /* The image used */
+    background-image: url("../../assets/img/bg1.jpg");
+
+    /* Full height */
+    height: 350px; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-post{
+    box-shadow: none;
+    border: 1px solid #888787!important;
+    color: #888787!important;
+    margin: 0px 0px 0px 0px;
+}
+.btn-book{
+    background-color: rgb(51, 177, 145);
+    box-shadow: none;
+    border-radius: 3px;
+    height: 26px!important;
+    padding-top: 0px!important;
+}
+.btn-post:hover{
+    box-shadow: none;
+    border: 1px solid #43c2d8!important;
+    color: #43c2d8!important;
+    margin: 0px 0px 0px 0px;
+}
+.container-specific{
+    padding: 30px 50px 10px 50px;
+}
+.logo-text{
+    font-size: 1.5em;
+    padding: 10px 10px 10px 10px;
+}
+.logo-text span{
+    color: rgb(94, 203, 218)
+}
+.play-rating{
+    background-color: rgb(29, 156, 103);
+    text-align: center;
+    padding-top: 13px;
+    font-size: 1.5em;
+    color: azure;
+    border: 1px solid rgb(14, 126, 79); 
+    border-radius: 5px;
+    max-height: 68px;
+    max-width: 68px;
+}
+.play-schedule-box{
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+    color: rgb(84, 85, 85);
+    border: 1px solid rgb(201, 201, 201); 
+    border-radius: 5px;
+    padding-block-start: 13px;
+    padding-block-end: 13px;
+}
+.play-makers{
+    padding-left: 15px;
+}
+.play-review{
+    background-color: #e2e1e1;
+    margin-bottom: 3px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 3px;
+}
+.play-review p{
+    margin-bottom: 0px;
+}
+.review-ts{
+    font-size: 0.7em;
+}
+.separator{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+.capsule{
+    margin-top: -5px;
+    margin-left: 0px; 
+}
+.capsule p{
+    background-color: rgb(233, 233, 233);
+    margin-right: 10px;
+    padding: 3px 5px 3px 5px;
+    border: 1px solid rgb(226, 226, 226); 
+    border-radius: 7px;
+    color: #888787;
+    
+}
+.play-schedule-list{
+    text-align: left;
+    padding: 0px 25px 0px 25px;
+}
+.play-schedule-list h6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 0.8em;
+}
+.play-schedule-list h5{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.2em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.card-date{
+    text-align: center;
+    font-size: 0.8em;
+    display: block;
+    background-color: rgb(126, 125, 125);
+    border-radius: 5px;
+    border: 1px solid rgb(107, 106, 106);
+}
+.card-date a{
+    color: #f2f2f2;
+}

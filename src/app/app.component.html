@@ -1,0 +1,119 @@
+ <!--The content below is only a placeholder and can be replaced. 
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<h2>Here are some links to help you start: </h2>
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul>-->
+<!--<app-logincomponent></app-logincomponent>
+<app-register></app-register>
+<ul *ngFor="let post of posts | async">
+  <li>
+    <strong>{{ post.name}}</strong>
+    <br>
+    {{post.email}}
+  </li>
+</ul>-->
+<!--
+<input type="text" [(ngModel)]="name" name="name" placeholder="Name..">
+<br/>
+<textarea [(ngModel)]="email" name="email" placeholder="Email.."></textarea>
+<br/>
+<input type="submit" value="Add User" (click)="addPost()">
+<google-map></google-map>-->
+<!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> -->
+  <!-- Brand/logo -->
+  <!-- <a class="navbar-brand logo-text" href="#"><span>on</span>Stage</a> --> 
+  
+  <!-- Links -->
+  <!-- <ul class="nav navbar-nav navbar-right">
+   <div *ngIf="header">
+      <li class="nav-item">
+        <a class="nav-link" routerLink = "login">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink = "register">Register</a>
+      </li>
+    </div>
+    <div *ngIf="!header">
+      <li class="nav-item">
+        <a class="nav-link"(click)="logout()">Logout</a>
+      </li>
+    </div> -->
+
+    
+<!--     
+    <div *ngIf="header">
+        <li class="nav-item">
+            <a routerLink = "login">
+        <button >Login</button>
+      </a>
+    </li>
+      <a routerLink = "register">
+        <button >Register</button>
+      </a>
+    </div>
+    <div *ngIf="!header">
+      <button (click)="logout()">Logout</button>
+    </div> -->
+  <!-- </ul>
+</nav> -->
+
+<nav class="navbar-stage-specific navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand logo-text navbar-header" href="#"><span>on</span>Stage</a>
+    
+    <!-- Links -->
+    <ul class="nav navbar-nav nav-right">
+        <!-- <li class="nav-item">
+            <a class="nav-link" routerLink = "theatre">Theatre</a>
+          </li> -->
+      <li class="nav-item">
+        <a class="nav-link" routerLink = "allplays">All Plays</a>
+      </li>
+        <li class="nav-item" *ngIf="header">
+            <a class="nav-link" routerLink = "login">Login</a>
+        </li>
+        <li class="nav-item" *ngIf="header">
+            <a class="nav-link" routerLink = "register">Register</a>
+        </li>
+      
+      <li class="nav-item" *ngIf="!header">
+        <a class="nav-link" routerLink="app-ticket">Booking History</a>
+      </li>
+          <li class="nav-item" *ngIf="!header">
+            <a class="nav-link"(click)="logout()" routerLink="">Logout</a>
+          </li>
+    
+    </ul>
+  </nav>
+<!-- <div *ngIf="header">
+  <a routerLink = "login">
+    <button >Login</button>
+  </a>
+  <a routerLink = "register">
+    <button >Register</button>
+  </a>
+</div>
+<div *ngIf="!header">
+  <button (click)="logout()">Logout</button>
+</div> -->
+
+<div class="mainpage">
+   <router-outlet>
+    
+   </router-outlet>
+   
+</div>

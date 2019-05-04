@@ -1,0 +1,47 @@
+
+<div class="container">
+    <div class="book-head">
+      <h5>Book Tickets here!</h5>
+    </div>
+    <div class="row">
+      <div class="col-lg-9">
+        <ul>
+          <li class="row" *ngFor="let row of seatMatrix.rows ; let i = index">
+            <h6 class="seat-row col-lg-2">Row {{10-i}}</h6>
+            <div class="col-lg-1 seat-border" *ngFor="let col of row.cols ; let j = index">
+              <div class="text-center" *ngIf="col == '0' || col == '1'">
+                <a class="seats-disp" *ngIf="col == '0'" (click)="getSeatNo(i,j)" id="{{'obj'+i+j}}">
+                  <div>
+                    <p>{{j+1}}</p>
+                  </div>
+                </a>
+                <div class="seats-selected" *ngIf="col == '1'">
+                  <p>
+                    <a>{{j+1}}</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <div class="selected-seats-disp" *ngIf="selectedSeatsFlag;">
+          <h4 class="text-center">Selected Seats</h4>
+          <div class="separator"></div>
+          <div class="capsule text-center" *ngFor="let i of dispRow; let j=index">
+            <p>Row {{i}}, Seat {{ dispCol[j] }}</p>
+          </div>
+          <div><p class="text-center text-cost">Total Cost: ₹{{totalCost}}</p></div>
+          <div class="separator"></div>
+          <button type="button"  (click)="onConfirm()" class="btn btn-success btn-confirmtct">Confirm Booking</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="screen-block"><p class="text-center">Stage</p></div>
+      </div>
+    </div>
+  </div>

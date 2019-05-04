@@ -1,0 +1,103 @@
+<!-- <div>
+  <strong>{{ message.title}}</strong>
+      <br>
+      {{message.duration}} |
+      
+      {{message.genre}} |
+      
+      {{message.language}} |
+      
+      {{message.rating}} star
+      <br>
+      Description: {{message.description}}
+      <br>
+      Director: {{message.director}}
+      <br>
+      Artists: {{message.artists}}
+      <br>
+      
+      
+      Playing At: <ol >
+                        <li *ngFor="let i of message.playingat  ">
+                          Theatre: {{i.theatre}}
+                        <br>Cost: {{i.cost}}
+                        <br>Date: {{i.date}}
+                        <br>Timing: {{i.timing}}</li>
+                  </ol>
+</div> -->
+  <!--<strong>{{ message.title}}</strong>-->
+
+  
+  <div class="bg"></div>
+  <div class="container-fluid container-specific">
+    <div class="row">
+      <div class="col-lg-1 play-rating">
+        <p>{{rating}} </p>
+      </div>
+      <div class="col-lg-7">
+        <h2>{{titles}}</h2>
+        <div class="row capsule">
+            <p>{{language}}</p>
+            <p>{{genre}}</p>
+            <p>{{duration}}</p>
+        </div>
+        <div class="row play-makers">
+          <p>Artists: <b>{{artists}}</b></p>
+          <p>&nbsp; Directed by: <b>{{director}}</b></p>
+        </div>
+        <div class="separator"></div>
+        <div class="play-description">
+          <!-- <h6>Synopsis:</h6> -->
+          <p> {{description}}</p>
+        </div>
+        <div class="separator"></div>
+        <div class="input-group mb-3">
+          <textarea #commenta class="form-control" placeholder="Add a review.." aria-label="Add a review.." aria-describedby="basic-addon2"></textarea>
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary btn-post" (click)="addComment(commenta.value)" type="button">Post</button>
+          </div>
+        </div>
+        <div *ngFor="let i of comments  ">
+          <div class="play-review">
+            <p><b>{{i.name}}</b></p>
+            <p>{{i.comment}}</p>
+            <p class="review-ts">{{i.timestamp}}</p>
+          </div>
+          <!-- <div class="play-review">
+              <p><b>Sachin George</b></p>
+              <p>Well directed play. Keep it up! :)</p>
+              <p class="review-ts">Aug 16, 2018 02:57 AM</p>
+            </div> -->
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="play-schedule-box">
+          <h4>Play Schedule</h4>
+          <div class="play-schedule-list" *ngFor="let i of playingat" >
+              <div class="separator"></div>
+              <div class="row">
+                <div class="col-lg-2 card-date">
+                  <a class="">{{i.date}}</a>
+                </div>
+                <div class="col-lg-10">
+                  <h5>{{i.theatre}}</h5>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <h6>{{i.area}}</h6>
+                      <h6>{{i.time}} | ₹{{i.cost}}</h6>
+                    </div>
+                    <div class="col-lg-4">
+                      <button class="btn btn-book" (click)="onBook(i.id,i.date,i.theatre,i.area,i.time,i.cost)"> Book</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <button (click)="onBook(i.id,i.date,i.theatre,i.area,i.time,i.cost)"> Book</button> -->
+              
+            </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

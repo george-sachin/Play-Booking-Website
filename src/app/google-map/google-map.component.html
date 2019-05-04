@@ -1,0 +1,23 @@
+<div *ngIf="lat && lng">
+
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom]=11>
+
+    <agm-marker *ngFor="let a of theatre" [latitude]="a.lat" [longitude]="a.long">
+   
+      <agm-info-window>
+        <b>{{a.t_name}}</b>
+        <br>
+        <b>{{a.area}}</b>
+      </agm-info-window>
+
+    </agm-marker>
+    <agm-marker [latitude]="lat" [longitude]="lng"  
+   
+   [iconUrl]="Urlicon">
+        <agm-info-window>
+        <p>You are here!</p>        
+      </agm-info-window>
+    </agm-marker>
+  </agm-map>
+
+<div>

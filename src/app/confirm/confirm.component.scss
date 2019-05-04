@@ -1,0 +1,90 @@
+.book-head{
+    display: block;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: rgb(245, 243, 243);   
+    border: 1px solid rgb(230, 229, 229);   
+    border-radius: 5px;
+}
+.btn-confirmtct{
+    margin-left: 15.5%;
+    margin-bottom: 15px;
+}
+.capsule{
+    margin-top: -5px;
+    margin-left: 0px; 
+}
+.capsule p{
+    background-color: #fff;
+    margin-block-start: 7px;
+    margin-left: 35px;
+    padding: 3px 5px 3px 5px;
+    border: 1px solid rgb(226, 226, 226); 
+    border-radius: 7px;
+    color: #4091a5;
+    font-size: 1em;
+    font-weight: 500;
+    width: 130px;
+}
+.seats-disp{
+    background-color: rgb(211, 210, 210);
+    color: #333;
+    font-size: 1.2em;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 3px;
+    margin: 1px 0px 1px 0px;  
+}
+.seat-border{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.seats-selected{
+    background-color: rgb(230, 71, 71);
+    color: #fff;
+    font-size: 1.2em;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    border: 1px solid rgb(221, 60, 60);
+    border-radius: 3px;
+    margin: 1px 0px 1px 0px;  
+}
+.seats-visited{
+    background-color: rgb(59, 161, 99);
+    color: #333;
+    border: 1px solid rgb(47, 148, 87);  
+}
+.separator{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+.screen-block{
+    display: block;
+    height: 26px;
+    background-color: rgb(102, 101, 101);
+    color: azure;
+    width: 64.5%;
+    border-radius: 3px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.seat-row{
+    margin-top: 15px;
+}
+.selected-seats-disp{
+    background-color: rgb(245, 243, 243);   
+    border: 1px solid rgb(230, 229, 229);   
+    color: #333;
+    width: 230px;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+.text-cost{
+    font-weight: 500;
+}

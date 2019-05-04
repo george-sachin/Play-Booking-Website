@@ -1,0 +1,95 @@
+<div class="container text-center login-block">
+  <h1>User SignUp</h1>
+  <div [hidden]="submitted">
+    <div class="row text-left">
+      <div class="col-lg-8 offset-lg-2">
+          <form  #UserFormComponent="ngForm"  (ngSubmit)="onSubmit(UserFormComponent.value)">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required minlength="5" maxlength="8" 
+                  [(ngModel)]="userSignupModel.name" name="name" #name="ngModel"
+                >
+                <div [hidden]="name.valid || (name.pristine && !UserFormComponent.submitted)"
+                       class="alert alert-danger">
+                    Name is required
+                  </div>
+              </div>
+          
+              <div class="form-group">
+                  <label for="location">Location</label>
+                  <input type="text" class="form-control" id="location" required
+                  [(ngModel)]="userSignupModel.location" name="location"  #location="ngModel"
+                  >
+                  <div [hidden]="location.valid || location.pristine"
+                  class="alert alert-danger">
+               location is required
+             </div>
+              </div>
+          
+              <div class="form-group" [ngClass]="{  
+                'has-danger': email.invalid && (email.dirty || email.touched),  
+                'has-success': email.valid && (email.dirty || email.touched)}">  
+                    <label class="form-control-label" for="email">Email</label>
+                    <input  type="email" class="form-control" id="email" required
+                    [(ngModel)]="userSignupModel.email" name="email"  #email="ngModel"
+                    pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"
+                    >
+                    <small [hidden]="email.valid || (email.pristine && !UserFormComponent.submitted)" class="text-danger">
+                      Email is required and format should be <i>john@doe.com</i>.
+                    </small>
+              </div>
+          
+              <div class="form-group">
+                  <label for="age">Age</label>
+                  <input type="number" class="form-control" id="age"
+                    [(ngModel)]="userSignupModel.age" name="age" #age="ngModel"
+                  >
+              </div>
+          
+              <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password"  required
+                    [(ngModel)]="userSignupModel.password" name="password" #password="ngModel"
+                    validateEqual="cPassword" reverse="true"
+                    >
+                    <small [hidden]="password.valid || (password.pristine && !UserFormComponent.submitted)">
+                      Password is required
+                  </small>
+              </div>
+                  
+              <div class="form-group">
+                      <label for="age">confirm password</label>
+                      <input type="password" class="form-control" id="cPassword"
+                      required validateEqual="password" #cPassword="ngModel"
+                        [(ngModel)]="userSignupModel.cPassword" name="cPassword"
+                      >
+                      <small [hidden]="cPassword.valid || (cPassword.pristine && !UserFormComponent.submitted)">
+                        Password mismatch
+                    </small>
+              </div>
+              <div class="form-group">
+                        <label for="dob">DOB</label>
+                        <input type="date" class="form-control" id="dob"
+                        [(ngModel)]="userSignupModel.dob" name="dob"
+                        >
+              </div>
+              
+          <!-- 
+              <div class="form-group">
+                <label for="type">User Type</label>
+                <select >
+                  <option class="form-control" *ngFor="let t of type" id="type" [value]="t" required
+                 name="type" 
+                  >{{t}}</option>
+                </select>
+              </div> -->
+          
+              <button type="submit" class="btn btn-default btn-center">Submit</button>
+          
+            </form>
+            </div>
+            </div>        
+
+
+</div>
+</div>

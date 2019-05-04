@@ -1,0 +1,89 @@
+.card-boundary{
+    border: none;
+    margin-top: 15px;
+    box-shadow: none;
+    
+}
+.card-specific{
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 1px;
+    align-items: center;
+    padding: 0px 0px 0px 0px; 
+}
+.card-button{
+    width: inherit;
+    font-size: 1em;
+    margin-left: -25px;
+}
+.card-desc{
+    text-align: left;
+    padding-left: 5px;
+}
+.card-desc h5{
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-bottom: 0px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.card-date{
+    display: block;
+    text-align: center;
+    text-overflow: wrap;
+    max-height: 58px;
+    background-color: rgb(39, 120, 167);
+    border-radius: 5px;
+    border: 1px solid rgb(35, 104, 145);
+}
+.card-list{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+.card-head{
+    text-decoration: none;
+    color: #333;
+}
+.card-date a{
+    color: #f2f2f2;
+    padding-bottom: 0px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    font-size: 1.3em;
+    text-align: center;
+}
+.card-desc p{
+    font-size: 0.8em;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+.card-details{
+    padding: 5px 22px 5px 20px;
+}
+.card-img-top{
+    height: 350px;
+}
+.capsule{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 0px; 
+}
+.capsule p{
+    background-color: rgb(233, 233, 233);
+    margin-right: 10px;
+    padding: 3px 5px 3px 5px;
+    border: 1px solid rgb(226, 226, 226); 
+    border-radius: 7px;
+    color: #888787;  
+}
+.section-link{
+    float: right;
+}
+.section-link a{
+    text-decoration: none;
+}
+.section-head{
+    margin-top: 20px;
+}

@@ -1,0 +1,34 @@
+
+<div class="container">
+    <div class="book-head">
+        <h5>Booking History</h5>
+      </div>
+  <div class="row ticket-row">
+      <div class="col-lg-4" *ngFor="let i of seats| slice:1; let a=index;">
+        <!-- <div *ngIf="a>0"> -->
+          <div class="img-container">
+              <div class=" capsule img-text top-left ">
+                <h6>{{i.Title}}</h6>
+                <p class="">{{i.Theatre}} | {{i.Area}}</p>
+                <p class="">{{i.Date}} | {{i.Time}}</p>
+                <p class="">Row: {{i.row}} | Seat: {{i.col}}</p>
+              </div>
+              <img class="" width="300px" height="150px" src="../../assets/img/ticket.png" alt="Card image">
+          </div>
+        <!-- </div> -->
+        </div>
+  </div>
+  
+
+    <!-- {{i.row}}
+    {{i.col}}
+    
+    {{i.Area}}
+    {{i.Cost}}
+    {{i.Date}}
+    {{i.Theatre}}
+    {{i.Time}}
+    {{i.Title}} -->
+
+</div>
+  

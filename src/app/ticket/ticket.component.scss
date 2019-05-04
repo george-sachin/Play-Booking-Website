@@ -1,0 +1,68 @@
+// .top-left {
+//     position: relative;
+//     left: 16px;
+// }
+.top-left p{
+    color: white;
+    margin: -5px 1px 1px 1px;
+}
+.img-container{
+    width:150px;
+    height:225px;
+    position: relative;
+    display: inline-block;
+    margin:5px;
+}
+.img-text{
+    top:50%;
+    width:245px;
+    height:100px;
+    margin-top: -90px;
+    margin-left: 18%;
+    position: absolute;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    display:block;
+    padding: 10px 5px 10px 5px;
+}
+.capsule p{
+    background-color: rgb(233, 233, 233);
+    margin-right: 10px;
+    padding: -1px 2px -1px 2px;
+    border: 1px solid rgb(226, 226, 226); 
+    border-radius: 4px;
+    color: #494949;  
+    font-size: 0.8em;
+    margin-bottom: 6px;
+    margin-right: 20%;
+    width:auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.capsule h6{
+    background-color: rgb(233, 233, 233);
+    margin-right: 10px;
+    padding: -5px 2px -1px 2px;
+    border: 1px solid rgb(226, 226, 226); 
+    border-radius: 4px;
+    color: #494949;  
+    font-size: 0.9em;
+    margin-top: -5px;
+    margin-bottom: 6px;
+    width:auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.book-head{
+    display: block;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: rgb(245, 243, 243);   
+    border: 1px solid rgb(230, 229, 229);   
+    border-radius: 5px;
+}
+.ticket-row{
+    padding-left: 30px;
+}
